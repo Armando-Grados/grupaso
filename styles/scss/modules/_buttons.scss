@@ -1,0 +1,23 @@
+.button {
+    background-color: #000;
+    border: 0;
+    //border-radius: var(--primary-border-radius);
+    color: var(--primary-text-color);
+    text-decoration: none;
+    padding: 0.60rem 1em;
+    width: 175.69px;
+    text-align: center;
+    cursor: pointer;
+  
+    &--primary {
+      //background-color: var(--primary-highlight-color);
+      //color: var(--reverse-primary-text-color);
+      color: #fff;
+    }
+
+
+}
+
+.button:hover{
+    background-color: #C12303;
+}

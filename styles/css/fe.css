@@ -1,0 +1,319 @@
+.header {
+  position: fixed;
+  z-index: 25;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav {
+  --padding-nav: 1rem;
+  --translate-menu: 100%;
+  padding-top: var(--padding-nav);
+  padding-bottom: var(--padding-nav);
+}
+@media (min-width: 768px) {
+  .nav {
+    --translate-menu: 0% ;
+  }
+}
+.nav--open {
+  --translate-menu: 0% ;
+}
+.nav__logo {
+  display: block;
+  width: 100px;
+  object-fit: cover;
+}
+.nav__action {
+  background-color: transparent;
+  border: none;
+  color: var(--primary-text-color);
+  font-size: 1.75rem;
+  padding: 0;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .nav__action--menu, .nav__action--close {
+    display: none;
+  }
+}
+.nav__action--close {
+  position: absolute;
+  top: var(--padding-nav);
+  right: var(--padding-nav);
+}
+
+.section-body {
+  padding-top: 100px;
+  padding-bottom: var(--padding-section);
+  box-sizing: border-box;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  padding-left: var(--padding-container);
+  padding-right: var(--padding-container);
+}
+
+.container-galeria {
+  display: flex;
+  max-width: var(max-width-container-section);
+  margin: 0 auto;
+  padding-left: var(--padding-container);
+  padding-right: var(--padding-container);
+}
+.container-galeria--elements {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--padding-section);
+}
+
+.elements {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.elements--header-nav {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.contenedor {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 355px;
+  height: 239.61px;
+  background-image: url("/assets/catalogo/la-galaxy-city-of-dreams-kit_600x.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: all 0.25s ease-out;
+  cursor: pointer;
+}
+
+.contenedor-2 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 355px;
+  height: 239.61px;
+  background-image: url("/assets/catalogo/nike-snood-warrior-winter-gear_600x.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: all 0.25s ease-out;
+  cursor: pointer;
+}
+
+.contenedor-4 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 355px;
+  height: 239.61px;
+  background-image: url("/assets/catalogo/lafc-2022-jersey_600x.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: all 0.25s ease-out;
+  cursor: pointer;
+}
+
+.contenedor-3 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 355px;
+  height: 239.61px;
+  background-image: url("/assets/catalogo/charly-atlas-conmemorativa_600x.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: all 0.25s ease-out;
+  cursor: pointer;
+}
+
+.contenedor .capa {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contenedor-2 .capa {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contenedor-3 .capa {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contenedor-4 .capa {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contenedor:hover .capa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contenedor-2:hover .capa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contenedor-3:hover .capa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contenedor-4:hover .capa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.img {
+  width: 355px;
+}
+
+@media (max-width: 768px) {
+  .img {
+    width: 200px;
+  }
+  .contenedor .capa {
+    display: flex;
+  }
+  .contenedor-2 .capa {
+    display: flex;
+  }
+  .contenedor-3 .capa {
+    display: flex;
+  }
+  .contenedor-4 .capa {
+    display: flex;
+  }
+  .elements--cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu--header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-image: linear-gradient(var(--primary-theme-color), var(--secondary-theme-color));
+  transform: translateX(var(--translate-menu));
+}
+@media (min-width: 768px) {
+  .menu--header {
+    position: initial;
+    width: initial;
+    flex-direction: initial;
+    gap: 1rem;
+    background-image: initial;
+  }
+}
+.menu__link {
+  position: relative;
+  color: var(--primary-text-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.25s;
+}
+.menu__link:hover {
+  color: var(--primary-highlight);
+}
+.menu__link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.25rem;
+  width: 0;
+  height: 0.0625rem;
+  background-color: var(--secondary-highlight-color);
+  transition: width 0.25s;
+}
+.menu__link:hover::before {
+  width: 100%;
+}
+
+.button {
+  background-color: #000;
+  border: 0;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  padding: 0.6rem 1em;
+  width: 175.69px;
+  text-align: center;
+  cursor: pointer;
+}
+.button--primary {
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #C12303;
+}
+
+.card {
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=fe.css.map */

@@ -62,9 +62,9 @@ const slider = () => {
           //spaceBetween: 20
         }
       },
-      autoplay:{
-        delay:5000,
-      }
+      // autoplay:{
+      //   delay:5000,
+      // }
     });
     
     export default slider;

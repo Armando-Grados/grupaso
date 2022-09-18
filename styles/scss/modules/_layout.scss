@@ -7,7 +7,15 @@
     max-width: 1600px;
     margin:  0 auto;
 
+    &__title{
+        text-align: center;
+        color: #000
+    }
+    
+
 }
+
+
 
 .container{
     max-width: var(--max-width-container);
@@ -33,7 +41,6 @@
 }
 
 .elements{
-   //@include d-flex-fd-ai-jc-g(row,stretch,flex-start,var(--padding-section));
    display: flex;
    flex-direction: row;
    gap: 1rem;
@@ -54,7 +61,7 @@
     align-items: center;
     width: 355px;
     height: 239.61px;
-    background-image: url('/assets/catalogo/la-galaxy-city-of-dreams-kit_600x.webp');
+    background-image: url('/assets/slider/la-galaxy-city-of-dreams-kit_600x.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -69,7 +76,7 @@
     align-items: center;
     width: 355px;
     height: 239.61px;
-    background-image: url('/assets/catalogo/nike-snood-warrior-winter-gear_600x.webp');
+    background-image: url('/assets/slider/nike-snood-warrior-winter-gear_600x.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -84,12 +91,12 @@
     align-items: center;
     width: 355px;
     height: 239.61px;
-    background-image: url('/assets/catalogo/lafc-2022-jersey_600x.webp');
+    background-image: url('/assets/slider/lafc-2022-jersey_600x.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: all 0.25s ease-out;
-     cursor: pointer;
+    cursor: pointer;
 }
 
 .contenedor-3{
@@ -99,12 +106,12 @@
     align-items: center;
     width: 355px;
     height: 239.61px;
-    background-image: url('/assets/catalogo/charly-atlas-conmemorativa_600x.webp');
+    background-image: url('/assets/slider/charly-atlas-conmemorativa_600x.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: all 0.25s ease-out;
-     cursor: pointer;
+    cursor: pointer;
 }
 
 .contenedor .capa{

@@ -51,6 +51,10 @@
   max-width: 1600px;
   margin: 0 auto;
 }
+.section-body__title {
+  text-align: center;
+  color: #000;
+}
 
 .container {
   max-width: var(--max-width-container);
@@ -93,7 +97,7 @@
   align-items: center;
   width: 355px;
   height: 239.61px;
-  background-image: url("/assets/catalogo/la-galaxy-city-of-dreams-kit_600x.webp");
+  background-image: url("/assets/slider/la-galaxy-city-of-dreams-kit_600x.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -108,7 +112,7 @@
   align-items: center;
   width: 355px;
   height: 239.61px;
-  background-image: url("/assets/catalogo/nike-snood-warrior-winter-gear_600x.webp");
+  background-image: url("/assets/slider/nike-snood-warrior-winter-gear_600x.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -123,7 +127,7 @@
   align-items: center;
   width: 355px;
   height: 239.61px;
-  background-image: url("/assets/catalogo/lafc-2022-jersey_600x.webp");
+  background-image: url("/assets/slider/lafc-2022-jersey_600x.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -138,7 +142,7 @@
   align-items: center;
   width: 355px;
   height: 239.61px;
-  background-image: url("/assets/catalogo/charly-atlas-conmemorativa_600x.webp");
+  background-image: url("/assets/slider/charly-atlas-conmemorativa_600x.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -313,7 +317,202 @@
 }
 
 .card {
+  display: flex;
   overflow: hidden;
+  flex-direction: column;
+  max-width: 250px;
+}
+.card a {
+  font-weight: 100;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.card.card-view {
+  margin: 10px 0 10px 0.5px;
+  padding: 15px 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.card.card-view-item2 {
+  display: block;
+  position: relative;
+  margin: 10px 0 10px 0.5px;
+  padding: 15px 0;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.card.card-view-item3 {
+  margin: 10px 0 10px 0.5px;
+  padding: 15px 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.card.card-view-item4 {
+  display: block;
+  position: relative;
+  margin: 10px 0 10px 0.5px;
+  padding: 15px 0;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.card.card-view-item5 {
+  margin: 10px 0 10px 0.5px;
+  padding: 15px 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.card.card-view-item6 {
+  display: block;
+  position: relative;
+  margin: 10px 0 10px 0.5px;
+  padding: 15px 0;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.card.card-view .card-view__img {
+  display: flex;
+  position: relative;
+  object-fit: cover;
+  object-position: center center;
+  margin: 0 auto;
+  padding: 0 2px;
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border 0.25s;
+}
+.card.card-view-item2 .card-view-item2__img {
+  position: relative;
+  object-fit: cover;
+  object-position: center center;
+  margin: 0 auto;
+  padding: 0 2px;
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card.card-view-item3 .card-view-item3__img {
+  display: flex;
+  position: relative;
+  object-fit: cover;
+  object-position: center center;
+  margin: 0 auto;
+  padding: 0 2px;
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border 0.25s;
+}
+.card.card-view-item4 .card-view-item4__img {
+  position: relative;
+  object-fit: cover;
+  object-position: center center;
+  margin: 0 auto;
+  padding: 0 2px;
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card.card-view-item5 .card-view-item5__img {
+  display: flex;
+  position: relative;
+  object-fit: cover;
+  object-position: center center;
+  margin: 0 auto;
+  padding: 0 2px;
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border 0.25s;
+}
+.card.card-view-item6 .card-view-item6__img {
+  position: relative;
+  object-fit: cover;
+  object-position: center center;
+  margin: 0 auto;
+  padding: 0 2px;
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card.card-view .card-view__img--active {
+  border: 1px solid #898786;
+  transition: filter 0.5s;
+}
+.card.card-view-item2 .card-view-item2__img--active {
+  border: 1px solid #898786;
+  transition: filter 0.5s;
+}
+.card.card-view-item3 .card-view-item3__img--active {
+  border: 1px solid #898786;
+  transition: filter 0.5s;
+}
+.card.card-view-item4 .card-view-item4__img--active {
+  border: 1px solid #898786;
+  transition: filter 0.5s;
+}
+.card.card-view-item5 .card-view-item5__img--active {
+  border: 1px solid #898786;
+  transition: filter 0.5s;
+}
+.card.card-view-item6 .card-view-item6__img--active {
+  border: 1px solid #898786;
+  transition: filter 0.5s;
+}
+.card.card-view .card-view__img:hover {
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.card.card-view-item2 .card-view-item2__img:hover {
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.card.card-view-item3 .card-view-item3__img:hover {
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.card.card-view-item4 .card-view-item4__img:hover {
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.card.card-view-item5 .card-view-item5__img:hover {
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.card.card-view-item6 .card-view-item6__img:hover {
+  border: 1px solid #000;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=fe.css.map */

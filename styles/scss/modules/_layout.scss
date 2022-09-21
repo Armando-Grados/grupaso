@@ -15,7 +15,7 @@
 
 }
 
-
+//agregar flex-wrap
 
 .container{
     max-width: var(--max-width-container);
@@ -33,7 +33,8 @@
 
     &--elements {
         display: flex;
-        flex-direction: row;
+  
+        //flex-direction: row;
         align-items: center;
         justify-content: center;
         gap: var(--padding-section);
@@ -43,6 +44,7 @@
 .elements{
    display: flex;
    flex-direction: row;
+   flex-wrap: wrap;
    gap: 1rem;
 
    &--header-nav{
@@ -51,6 +53,13 @@
     justify-content: space-between;
     gap: 0;
    }
+}
+
+.elements--cards{
+    display: flex;
+    //flex-wrap: wrap;
+    gap: 2rem;
+    //flex-direction: row;
 }
 
 //galeria
